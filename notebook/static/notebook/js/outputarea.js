@@ -361,6 +361,9 @@ define([
             iframe.css({'height':1, 'width':'100%', 'display':'block'});
             iframe.attr('frameborder', 0);
             iframe.attr('scrolling', 'auto');
+            iframe.attr('allowfullscreen', 'true');
+            iframe.attr('webkitallowfullscreen', 'true');
+            iframe.attr('mozallowfullscreen', 'true');
 
             // Once the iframe is loaded, the subarea is dynamically inserted
             iframe.on('load', function() {
